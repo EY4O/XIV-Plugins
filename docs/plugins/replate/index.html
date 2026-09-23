@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060910">
+  <meta name="description" content="RePlate is a work-in-progress Dalamud plugin aiming to save and restore Adventure Portrait presets. Public release pending.">
+  <title>RePlate · XIV-Plugins</title>
+  <link rel="icon" type="image/png" href="../../assets/dalamud.png">
+  <link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="../../" aria-label="Looneth's Repo home"><span class="brand-seal" aria-hidden="true"><img src="../../assets/dalamud.png" alt="" width="28" height="28"></span><span>Looneth's Repo</span></a>
+      <nav aria-label="Primary"><a href="../../#collection">Plugins</a><a href="../../#install">Install</a></nav>
+      <a class="nav-github" href="https://github.com/EY4O/XIV-Plugins">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main class="layout-shell">
+    <a class="back-link" href="../../">← Back to collection</a>
+    <section class="detail-hero" aria-labelledby="plugin-name">
+      <div class="detail-copy" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Adventure Portraits</p>
+        <h1 id="plugin-name">Re<em>Plate.</em></h1>
+        <div class="detail-status"><span class="status">Work in progress</span><span>Public release pending</span></div>
+        <p class="detail-tagline">A portrait worth keeping.</p>
+        <p class="detail-summary">RePlate is being developed with a goal of saving Adventure Portrait presets and restoring them when you want to return to a look.</p>
+        <a class="cta" href="#goal"><span>Explore the goal</span><span class="cta-icon" aria-hidden="true">↓</span></a>
+      </div>
+      <div class="detail-shell" data-reveal>
+        <div class="detail-card">
+          <p class="overline">Plugin profile / 02</p>
+          <div class="feature-icon-shell"><div class="feature-icon-core"><img src="../../assets/replate-icon.png" alt="RePlate icon" width="116" height="116"></div></div>
+          <h2>RePlate</h2>
+          <dl>
+            <div><dt>Author</dt><dd>Looneth</dd></div>
+            <div><dt>Platform</dt><dd>Dalamud</dd></div>
+            <div><dt>Release</dt><dd>Pending</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-content" id="goal" aria-labelledby="goal-title" data-reveal>
+      <div class="content-shell">
+        <div class="content-core">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> The goal</p>
+            <h2 id="goal-title">Keep the portraits you love.</h2>
+            <p>Getting an Adventure Portrait just right takes time. RePlate aims to let you save a portrait setup as a preset and restore it later. These are planned capabilities while the plugin is in development.</p>
+          </div>
+          <aside class="release-note">
+            <h3>Release status</h3>
+            <p>RePlate is a work in progress. There is no public build, download, or Dalamud installer entry yet.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer layout-shell">
+    <span>© Looneth · XIV-Plugins</span>
+    <div class="footer-social" aria-label="Community links">
+      <a class="social-link" href="https://www.patreon.com/Looneth" aria-label="Support Looneth on Patreon" title="Patreon"><span class="social-icon social-patreon" aria-hidden="true"></span></a>
+      <a class="social-link" href="https://ko-fi.com/looneth" aria-label="Support Looneth on Ko-fi" title="Ko-fi"><span class="social-icon social-kofi" aria-hidden="true"></span></a>
+      <a class="social-link" href="https://github.com/EY4O/XIV-Plugins" aria-label="XIV-Plugins on GitHub" title="GitHub"><span class="social-icon social-github" aria-hidden="true"></span></a>
+    </div>
+  </footer>
+  <script>
+    if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const blocks = document.querySelectorAll('[data-reveal]');
+      document.documentElement.classList.add('motion');
+      blocks.forEach(block => block.classList.add('awaiting-reveal'));
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.remove('awaiting-reveal');
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.08 });
+      blocks.forEach(block => observer.observe(block));
+    }
+  </script>
+</body>
+</html>
