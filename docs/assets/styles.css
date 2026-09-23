@@ -120,6 +120,18 @@ kbd { padding: 2px 6px; border-radius: 5px; background: rgba(255,255,255,.09); c
 .release-note { align-self: start; padding: 25px; border-radius: 19px; background: rgba(145,216,255,.065); box-shadow: inset 0 0 0 1px rgba(145,216,255,.11); }
 .release-note h3 { margin-bottom: 10px; font-size: 1.1rem; }
 .release-note p:last-child { margin-bottom: 0; }
+.detail-tagline { margin-bottom: 14px; font-family: "Clash Display", "Aptos Display", "Segoe UI Variable", sans-serif; font-size: clamp(1.5rem, 2.4vw, 2rem); font-weight: 650; line-height: 1.2; letter-spacing: -.035em; }
+.hook-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; scroll-margin-top: 110px; }
+.hook-card { padding: 26px; border-radius: 25px; background: rgba(255,255,255,.045); box-shadow: inset 0 0 0 1px rgba(255,255,255,.095); }
+.hook-card h3 { margin-bottom: 8px; font-size: 1.1rem; }
+.hook-card p { margin: 0; color: var(--muted); font-size: .94rem; }
+.pitch-section { padding-top: 74px; }
+.content-core .pitch-list { list-style: none; margin: 0; padding: 0; }
+.pitch-list li { padding: 13px 0; box-shadow: inset 0 -1px rgba(255,255,255,.09); }
+.pitch-list li:first-child { padding-top: 0; }
+.pitch-list strong { color: var(--text); font-weight: 600; }
+.content-core .closing-title { font-size: clamp(1.9rem, 3vw, 2.7rem); }
+.content-core .cta { margin-top: 8px; }
 
 html.motion [data-reveal].awaiting-reveal { opacity: 0; transform: translateY(42px); }
 html.motion [data-reveal].revealed { opacity: 1; transform: translateY(0); transition: opacity .85s cubic-bezier(.32,.72,0,1), transform .85s cubic-bezier(.32,.72,0,1); }
@@ -142,6 +154,8 @@ html.motion [data-reveal].revealed { opacity: 1; transform: translateY(0); trans
   .install-section { padding-top: 48px; padding-bottom: 100px; }
   .install-core, .content-core { grid-template-columns: 1fr; gap: 37px; padding: 34px; }
   .detail-content { padding-top: 40px; padding-bottom: 100px; }
+  .hook-strip { grid-template-columns: 1fr; }
+  .pitch-section { padding-top: 40px; }
 }
 @media (max-width: 500px) {
   .hero { padding-top: 58px; gap: 45px; }

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#060910">
-  <meta name="description" content="AutoTataru is Looneth's market board companion for retainer selling and price-guided buying. Public release pending.">
+  <meta name="description" content="AutoTataru is a Dalamud plugin that reprices your retainers from recent sales, imports Teamcraft lists and shops across your data center within the limits you set. Public release pending.">
   <title>AutoTataru · XIV-Plugins</title>
   <link rel="icon" type="image/png" href="../../assets/dalamud.png">
   <link rel="stylesheet" href="../../assets/styles.css">
@@ -26,8 +26,9 @@
         <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Market &amp; retainers</p>
         <h1 id="plugin-name">Auto<em>Tataru.</em></h1>
         <div class="detail-status"><span class="status">In testing</span><span>Public release pending</span></div>
-        <p class="detail-summary">A market board companion that brings retainer selling, buying limits, price guidance, and run controls together.</p>
-        <a class="cta" href="../../#install"><span>Repository instructions</span><span class="cta-icon" aria-hidden="true">↗</span></a>
+        <p class="detail-tagline">Let Tataru handle the gil.</p>
+        <p class="detail-summary">Undercut, reprice, restock and shop across worlds, all from your summoning bell. AutoTataru is a market board plugin that sells for your retainers and shops for your crafts, and it follows the price limits you set.</p>
+        <a class="cta" href="#features"><span>See what it does</span><span class="cta-icon" aria-hidden="true">↓</span></a>
       </div>
       <div class="detail-shell" data-reveal>
         <div class="detail-card">
@@ -43,18 +44,86 @@
       </div>
     </section>
 
-    <section class="detail-content" aria-labelledby="about-title" data-reveal>
+    <section class="hook-strip" id="features" aria-label="Highlights" data-reveal>
+      <div class="hook-card">
+        <h3>Stop reading the board by hand.</h3>
+        <p>AutoTataru prices each item from recent sales, not just the cheapest listing.</p>
+      </div>
+      <div class="hook-card">
+        <h3>Stop checking eight worlds for Yak Milk.</h3>
+        <p>It scans your data center, plans the route and does the shopping.</p>
+      </div>
+      <div class="hook-card">
+        <h3>Stop overpaying.</h3>
+        <p>Every purchase has a price ceiling, a budget and a spend cap.</p>
+      </div>
+    </section>
+
+    <section class="pitch-section" aria-labelledby="selling-title" data-reveal>
       <div class="content-shell">
         <div class="content-core">
           <div>
-            <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> About the plugin</p>
-            <h2 id="about-title">Selling and buying in one place.</h2>
-            <p>AutoTataru uses market data to help set selling prices and organizes the limits used during buying runs. Its in-game controls make each decision visible and let you stop a run.</p>
-            <ul>
-              <li>Set minimum prices and undercut rules for items you sell.</li>
-              <li>Review buying limits before starting a shopping run.</li>
-              <li>See the decisions made during a run and stop it when needed.</li>
-            </ul>
+            <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Selling</p>
+            <h2 id="selling-title">Your retainers, repriced in one pass.</h2>
+            <p>Undercutting by hand gets old fast. With AutoTataru you open the summoning bell and press <strong>Sell All</strong>. It visits each retainer, prices every listing and reprices anything that has been undercut.</p>
+          </div>
+          <ul class="pitch-list">
+            <li><strong>Prices from real sales.</strong> It uses the median of recent sales from Universalis, so one listing at 1 gil or at 9,999,999 gil can't move your price.</li>
+            <li><strong>You set the lowest price.</strong> Each item gets a minimum it will never sell below. You choose the undercut, either a flat amount or a percentage.</li>
+            <li><strong>HQ and NQ priced separately.</strong> It knows the difference, even when one of them has little sales history.</li>
+            <li><strong>Works with AutoRetainer.</strong> If AutoRetainer already runs your ventures, AutoTataru can reprice during the same retainer visit.</li>
+            <li><strong>Add items from the right-click menu.</strong> Right-click an item in your inventory to add it to the sell list.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="pitch-section" aria-labelledby="buying-title" data-reveal>
+      <div class="content-shell">
+        <div class="content-core">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Buying</p>
+            <h2 id="buying-title">A shopping list that shops for you.</h2>
+            <p>Paste a crafting list. It works out what you already have and buys only what you still need, at a fair price, on whichever world sells it cheapest.</p>
+          </div>
+          <ul class="pitch-list">
+            <li><strong>Imports from Teamcraft.</strong> Paste a Teamcraft list and AutoTataru picks out the raw materials. Each import becomes its own named group that you can switch on or off.</li>
+            <li><strong>Buys across your data center.</strong> It scans every world, shows you the route, and after you approve it, travels and buys. Travel uses Lifestream and vnavmesh.</li>
+            <li><strong>Counts what you already own.</strong> Bags, crystals, saddlebag and retainers all count, so it won't buy materials you already have.</li>
+            <li><strong>Limits set for you.</strong> AutoTataru suggests a price ceiling and budget from market history. You can type your own values to override them.</li>
+            <li><strong>Checks NPC vendors.</strong> If a vendor sells the item for less, the run won't pay more for it on the board.</li>
+            <li><strong>Keep in stock.</strong> Pick a quantity for the materials you always use, and each run tops you back up to that amount.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="pitch-section" aria-labelledby="control-title" data-reveal>
+      <div class="content-shell">
+        <div class="content-core">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Control</p>
+            <h2 id="control-title">You're always in control.</h2>
+            <p>Automation you can't see into makes people nervous, so AutoTataru shows its work.</p>
+          </div>
+          <ul class="pitch-list">
+            <li><strong>One-click STOP.</strong> The run halts immediately, from the header or with <kbd>/taru stop</kbd>.</li>
+            <li><strong>Stops by itself when something looks wrong.</strong> If a game window shows something it didn't expect, it halts instead of guessing.</li>
+            <li><strong>Logs every decision.</strong> Each sale and purchase records what it did and why: the median it used, the undercut it applied and the floor it respected.</li>
+            <li><strong>Imports start switched off.</strong> Items imported from Teamcraft can't be bought until they have limits.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-content" aria-labelledby="release-title" data-reveal>
+      <div class="content-shell">
+        <div class="content-core">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Coming soon</p>
+            <h2 id="release-title" class="closing-title">Tataru would never let the Scions overpay. AutoTataru won't let you either.</h2>
+            <p>Add Looneth's repository now and AutoTataru will appear in <kbd>/xlplugins</kbd> when the first public build ships.</p>
+            <a class="cta" href="../../#install"><span>Repository instructions</span><span class="cta-icon" aria-hidden="true">↗</span></a>
           </div>
           <aside class="release-note">
             <h3>Release status</h3>
