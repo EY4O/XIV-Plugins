@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060910">
+  <meta name="description" content="Looneth's Dalamud plugin collection, release information, and repository installation link.">
+  <title>XIV-Plugins · Looneth</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='3' y='3' width='58' height='58' rx='18' fill='%23060910' stroke='%2391d8ff' stroke-width='3'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='sans-serif' font-size='20' font-weight='700' fill='%23f5f9ff'%3EXIV%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="./" aria-label="Looneth's Repo home"><span class="brand-seal" aria-hidden="true">XIV</span><span>Looneth's Repo</span></a>
+      <nav aria-label="Primary"><a href="#collection">Plugins</a><a href="#install">Install</a></nav>
+      <a class="nav-github" href="https://github.com/EY4O/XIV-Plugins">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero layout-shell" aria-labelledby="page-title">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Looneth / Dalamud</p>
+        <h1 id="page-title">One place for my <em>Dalamud plugins.</em></h1>
+        <p class="hero-intro">Browse the collection, follow each release, and use one repository link to install through Dalamud.</p>
+        <a class="cta" href="#collection"><span>Explore plugins</span><span class="cta-icon" aria-hidden="true">↗</span></a>
+        <p class="hero-note">The first plugin is in testing. No public download is available yet.</p>
+      </div>
+
+      <div class="feature-shell" id="collection" data-reveal>
+        <article class="feature-card" aria-labelledby="featured-plugin">
+          <div class="feature-top"><span class="overline">01 / Collection</span><span class="status">In testing</span></div>
+          <div class="feature-icon-shell"><div class="feature-icon-core"><img src="assets/autotataru-icon.png" alt="AutoTataru icon" width="116" height="116"></div></div>
+          <div class="feature-content">
+            <p class="overline">Market &amp; retainers</p>
+            <h2 id="featured-plugin">AutoTataru</h2>
+            <p>A market board companion for retainer selling and price-guided buying.</p>
+          </div>
+          <div class="feature-bottom"><span>Public release pending</span><a class="round-link" href="plugins/autotataru/" aria-label="View AutoTataru details"><span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="install-section layout-shell" id="install" aria-labelledby="install-title" data-reveal>
+      <div class="install-shell">
+        <div class="install-core">
+          <div class="install-heading">
+            <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> One link for the collection</p>
+            <h2 id="install-title">Install through Dalamud.</h2>
+            <p>Add the repository once. Released plugins and their updates will appear in the plugin installer.</p>
+          </div>
+          <div class="install-details">
+            <ol class="steps">
+              <li><span>01</span><p>Open Dalamud settings with <kbd>/xlsettings</kbd> in game.</p></li>
+              <li><span>02</span><p>Under <strong>Experimental → Custom Plugin Repositories</strong>, add the URL below and save.</p></li>
+              <li><span>03</span><p>Open <kbd>/xlplugins</kbd> to install a plugin after its public release.</p></li>
+            </ol>
+            <div class="feed-row"><code id="feed-url">https://ey4o.github.io/XIV-Plugins/repo.json</code><button class="copy-button" id="copy-feed" type="button">Copy URL <span class="copy-symbol" aria-hidden="true">↗</span></button></div>
+            <p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p>
+            <p class="feed-note">The feed is currently empty while AutoTataru is being tested.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer layout-shell">
+    <span>© Looneth · XIV-Plugins</span>
+    <div class="footer-social" aria-label="Community links">
+      <a class="social-link" href="https://ko-fi.com/looneth" aria-label="Support Looneth on Ko-fi" title="Ko-fi"><span class="social-icon social-kofi" aria-hidden="true"></span></a>
+      <a class="social-link" href="https://github.com/EY4O/XIV-Plugins" aria-label="XIV-Plugins on GitHub" title="GitHub"><span class="social-icon social-github" aria-hidden="true"></span></a>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('copy-feed').addEventListener('click', async () => {
+      const feedback = document.getElementById('copy-feedback');
+      try {
+        await navigator.clipboard.writeText(document.getElementById('feed-url').textContent.trim());
+        feedback.textContent = 'Repository URL copied.';
+      } catch {
+        feedback.textContent = 'Copy the URL shown above.';
+      }
+    });
+    if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const blocks = document.querySelectorAll('[data-reveal]');
+      document.documentElement.classList.add('motion');
+      blocks.forEach(block => block.classList.add('awaiting-reveal'));
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.remove('awaiting-reveal');
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.08 });
+      blocks.forEach(block => observer.observe(block));
+    }
+  </script>
+</body>
+</html>
