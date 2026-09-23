@@ -90,9 +90,11 @@ kbd { padding: 2px 6px; border-radius: 5px; background: rgba(255,255,255,.09); c
 .footer-social { display: flex; align-items: center; gap: 8px; margin: -6px -6px -6px 0; }
 .social-link { width: 44px; height: 44px; display: inline-grid; place-items: center; border-radius: 50%; }
 .social-icon { display: block; width: 32px; height: 32px; background: var(--muted); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; transition: background-color .3s cubic-bezier(.32,.72,0,1), transform .3s cubic-bezier(.32,.72,0,1); }
+.social-patreon { -webkit-mask-image: url('patreon.svg'); mask-image: url('patreon.svg'); }
 .social-kofi { -webkit-mask-image: url('kofi.svg'); mask-image: url('kofi.svg'); }
 .social-github { -webkit-mask-image: url('github.svg'); mask-image: url('github.svg'); }
 .social-link:hover .social-icon, .social-link:focus-visible .social-icon { background: var(--accent); transform: translateY(-2px); }
+.social-link:hover .social-patreon, .social-link:focus-visible .social-patreon { background: linear-gradient(135deg, #ff424d, #ff8a4b); }
 .social-link:hover .social-kofi, .social-link:focus-visible .social-kofi { background: #ff6433; }
 
 .back-link { display: inline-block; margin-top: 38px; color: var(--muted); text-decoration: none; font-size: .84rem; }
