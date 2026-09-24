@@ -20,5 +20,27 @@
     "DownloadLinkTesting": "https://github.com/EY4O/AutoTataru/releases/download/v0.9.0.0/latest.zip",
     "LastUpdate": "1790241509",
     "Changelog": "First testing release. Sells for your retainers (Sell All, AutoRetainer turns, sales loop) and buys your Buy List across your data centre, with Teamcraft import, automatic limits, stock counting, NPC price checks, a welcome guide and a switchable theme. Works on any world and data centre; buying needs the English client for now."
+  },
+  {
+    "Author": "Looneth",
+    "Name": "Bagcheck",
+    "InternalName": "Bagcheck",
+    "AssemblyVersion": "0.5.0.0",
+    "TestingAssemblyVersion": null,
+    "Punchline": "A shopping list and retainer tracker for crafters.",
+    "Description": "Know what you need, what you have, and where it's cheapest. Bagcheck keeps count; you do the shopping.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/EY4O/Bagcheck",
+    "Tags": ["shopping", "crafting", "teamcraft", "retainer", "marketboard", "tracker"],
+    "DalamudApiLevel": 15,
+    "IconUrl": "https://ey4o.github.io/XIV-Plugins/assets/bagcheck-icon.png",
+    "AcceptsFeedback": false,
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "DownloadLinkInstall": "https://github.com/EY4O/Bagcheck/releases/download/v0.5.0.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/EY4O/Bagcheck/releases/download/v0.5.0.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/EY4O/Bagcheck/releases/download/v0.5.0.0/latest.zip",
+    "LastUpdate": "1790245975",
+    "Changelog": "First release: a shopping list with Teamcraft import, holdings across bags, crystals, saddlebag and retainers, data-centre prices with NPC vendors and a total, and a Retainers tab."
   }
 ]

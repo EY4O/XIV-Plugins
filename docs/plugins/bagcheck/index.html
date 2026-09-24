@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060910">
+  <meta name="description" content="Bagcheck is a shopping list and retainer tracker for crafters. Know what you need, what you have, and where it's cheapest. Version 0.5.0 is available from Looneth's repository.">
+  <title>Bagcheck · XIV-Plugins</title>
+  <link rel="icon" type="image/png" href="../../assets/dalamud.png">
+  <link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="../../" aria-label="Looneth's Repo home"><span class="brand-seal" aria-hidden="true"><img src="../../assets/dalamud.png" alt="" width="28" height="28"></span><span>Looneth's Repo</span></a>
+      <nav aria-label="Primary"><a href="../../#collection">Plugins</a><a href="../../#install">Install</a></nav>
+      <a class="nav-github" href="https://github.com/EY4O/XIV-Plugins">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main class="layout-shell">
+    <a class="back-link" href="../../">← Back to collection</a>
+    <section class="detail-hero" aria-labelledby="plugin-name">
+      <div class="detail-copy" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Crafting &amp; retainers</p>
+        <h1 id="plugin-name">Bag<em>check.</em></h1>
+        <div class="detail-status"><span class="status">Release</span><span>0.5.0 available now</span></div>
+        <p class="detail-tagline">A shopping list and retainer tracker for crafters.</p>
+        <p class="detail-summary">Know what you need, what you have, and where it's cheapest. Bagcheck keeps count; you do the shopping.</p>
+        <a class="cta" href="#features"><span>See what it does</span><span class="cta-icon" aria-hidden="true">↓</span></a>
+      </div>
+      <div class="detail-shell" data-reveal>
+        <div class="detail-card">
+          <p class="overline">Plugin profile / 02</p>
+          <div class="feature-icon-shell"><div class="feature-icon-core"><img src="../../assets/bagcheck-icon.png" alt="Bagcheck icon" width="116" height="116"></div></div>
+          <h2>Bagcheck</h2>
+          <dl id="plugin-profile">
+            <div><dt>Author</dt><dd>Looneth</dd></div>
+            <div><dt>Platform</dt><dd>Dalamud</dd></div>
+            <div><dt>Release</dt><dd>0.5.0</dd></div>
+            <div><dt>Source</dt><dd><a href="https://github.com/EY4O/Bagcheck">GitHub</a> · MIT</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="pitch-section" id="features" aria-labelledby="features-title" data-reveal>
+      <div class="content-shell">
+        <div class="content-core">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Features</p>
+            <h2 id="features-title">Everything your next craft needs, in one list.</h2>
+          </div>
+          <ul class="pitch-list">
+            <li><strong>Shopping List.</strong> Add items by search, from the right-click menu, or by pasting a Teamcraft list.</li>
+            <li><strong>Need and have.</strong> Counts what you hold across your bags, crystals, saddlebag and retainers.</li>
+            <li><strong>Prices.</strong> The cheapest worlds on your data center, NPC vendors that sell for less, and what finishing the list would cost.</li>
+            <li><strong>Retainers.</strong> Each retainer's gil and listings, and which listings have been undercut.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-content" aria-labelledby="release-title" data-reveal>
+      <div class="content-shell">
+        <div class="content-core">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Available now</p>
+            <h2 id="release-title" class="closing-title">Check your bags before you shop.</h2>
+            <p>Add Looneth's repository, then install Bagcheck from <kbd>/xlplugins</kbd>. A short welcome guide opens the first time, and <kbd>/bagcheck</kbd> opens it any time after.</p>
+            <a class="cta" href="../../#install"><span>Repository instructions</span><span class="cta-icon" aria-hidden="true">↗</span></a>
+          </div>
+          <aside class="release-note">
+            <h3>Good to know</h3>
+            <p><strong>Prices</strong> come from Universalis, shared by players across every data center.</p>
+            <p><strong>Retainers</strong> are counted as you last saw them, so open each one at a summoning bell now and then.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer layout-shell">
+    <span>© Looneth · XIV-Plugins</span>
+    <div class="footer-social" aria-label="Community links">
+      <a class="social-link" href="https://www.patreon.com/Looneth" aria-label="Support Looneth on Patreon" title="Patreon"><span class="social-icon social-patreon" aria-hidden="true"></span></a>
+      <a class="social-link" href="https://ko-fi.com/looneth" aria-label="Support Looneth on Ko-fi" title="Ko-fi"><span class="social-icon social-kofi" aria-hidden="true"></span></a>
+      <a class="social-link" href="https://github.com/EY4O/XIV-Plugins" aria-label="XIV-Plugins on GitHub" title="GitHub"><span class="social-icon social-github" aria-hidden="true"></span></a>
+    </div>
+  </footer>
+  <script>
+    // Downloads of the release zip, as counted by GitHub. Updates download it again, so this counts downloads, not
+    // players. The row appears only once a release exists, and stays away if GitHub does not answer.
+    async function showDownloads(repo) {
+      try {
+        const response = await fetch(`https://api.github.com/repos/${repo}/releases?per_page=100`);
+        if (!response.ok) return;
+        const releases = await response.json();
+        if (!Array.isArray(releases) || releases.length === 0) return;
+        const total = releases.flatMap(release => release.assets || [])
+          .reduce((sum, asset) => sum + (asset.download_count || 0), 0);
+        const row = document.createElement('div');
+        row.title = 'Downloads of the plugin from GitHub, including updates';
+        const term = document.createElement('dt');
+        term.textContent = 'Downloads';
+        const value = document.createElement('dd');
+        value.textContent = total.toLocaleString('en-US');
+        row.append(term, value);
+        document.getElementById('plugin-profile').append(row);
+      } catch { /* No count is better than a wrong one. */ }
+    }
+    showDownloads('EY4O/Bagcheck');
+    if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const blocks = document.querySelectorAll('[data-reveal]');
+      document.documentElement.classList.add('motion');
+      blocks.forEach(block => block.classList.add('awaiting-reveal'));
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.remove('awaiting-reveal');
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.08 });
+      blocks.forEach(block => observer.observe(block));
+    }
+  </script>
+</body>
+</html>
