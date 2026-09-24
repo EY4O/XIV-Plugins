@@ -2,7 +2,7 @@
 
 A custom Dalamud repository for Looneth's Final Fantasy XIV plugins. Browse plugin details and release status on the [plugin directory](https://ey4o.github.io/XIV-Plugins/).
 
-> **Current status:** AutoTataru is in testing and RePlate is a work in progress. There are no public plugin downloads yet, so the repository feed is empty and no plugin will appear in the installer until a release is ready.
+> **Current status:** AutoTataru 0.9.0 is available as a testing release. RePlate is a work in progress and not in the feed yet.
 
 ## Add the repository to Dalamud
 
@@ -14,15 +14,15 @@ A custom Dalamud repository for Looneth's Final Fantasy XIV plugins. Browse plug
    https://ey4o.github.io/XIV-Plugins/repo.json
    ```
 
-4. Type `/xlplugins` to open the Plugin Installer. Once a plugin has a public release, find and install it there. Dalamud will use this same repository for future updates.
+4. Type `/xlplugins` to open the Plugin Installer, then find and install the plugin there. Dalamud will use this same repository for future updates.
 
-You can add the repository now, but the installer will show no plugins from it until the first public release. There is no need to download a ZIP manually.
+There is no need to download a ZIP manually.
 
 ## Plugins
 
 | Plugin | Status | Details |
 | --- | --- | --- |
-| AutoTataru | In testing; public release pending | [Plugin page](https://ey4o.github.io/XIV-Plugins/plugins/autotataru/) |
+| AutoTataru | Testing release 0.9.0 | [Plugin page](https://ey4o.github.io/XIV-Plugins/plugins/autotataru/) |
 | RePlate | Work in progress; public release pending | [Plugin page](https://ey4o.github.io/XIV-Plugins/plugins/replate/) |
 
 The [directory site](https://ey4o.github.io/XIV-Plugins/) will list new plugins and release information as they become available.
