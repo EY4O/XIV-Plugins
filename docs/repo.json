@@ -42,5 +42,27 @@
     "DownloadLinkTesting": "https://github.com/EY4O/Bagcheck/releases/download/v0.5.0.0/latest.zip",
     "LastUpdate": "1790245975",
     "Changelog": "First release: a shopping list with Teamcraft import, holdings across bags, crystals, saddlebag and retainers, data-centre prices with NPC vendors and a total, and a Retainers tab."
+  },
+  {
+    "Author": "Looneth",
+    "Name": "RePlate",
+    "InternalName": "RePlate",
+    "AssemblyVersion": "0.5.0.0",
+    "TestingAssemblyVersion": null,
+    "Punchline": "Save and restore your adventurer plate.",
+    "Description": "Save your adventurer plate's portrait and design, and put them back in one click.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/EY4O/RePlate",
+    "Tags": ["adventurer plate", "portrait", "preset"],
+    "DalamudApiLevel": 15,
+    "IconUrl": "https://ey4o.github.io/XIV-Plugins/assets/replate-icon.png",
+    "AcceptsFeedback": false,
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "DownloadLinkInstall": "https://github.com/EY4O/RePlate/releases/download/v0.5.0.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/EY4O/RePlate/releases/download/v0.5.0.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/EY4O/RePlate/releases/download/v0.5.0.0/latest.zip",
+    "LastUpdate": "1790294857",
+    "Changelog": "First release: save your adventurer plate's portrait and design, restore them through the plate's own editors with a check before you save, share plates as codes, capture a picture for each, and pin favourites."
   }
 ]
