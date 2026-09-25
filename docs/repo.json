@@ -47,7 +47,7 @@
     "Author": "Looneth",
     "Name": "RePlate",
     "InternalName": "RePlate",
-    "AssemblyVersion": "0.6.0.0",
+    "AssemblyVersion": "0.6.1.0",
     "TestingAssemblyVersion": null,
     "Punchline": "Save and restore your adventurer plate.",
     "Description": "Save your adventurer plate and your gear sets' portraits, and put them back whenever you like. Share them as codes, too.",
@@ -59,10 +59,10 @@
     "AcceptsFeedback": false,
     "IsHide": false,
     "IsTestingExclusive": false,
-    "DownloadLinkInstall": "https://github.com/EY4O/RePlate/releases/download/v0.6.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/EY4O/RePlate/releases/download/v0.6.0.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/EY4O/RePlate/releases/download/v0.6.0.0/latest.zip",
-    "LastUpdate": "1790318449",
-    "Changelog": "Portraits: a gallery of your gear sets' portraits, saved straight from any gear set, and one portrait put on several gear sets, each opening in turn for you to look over and save. Also a right-click menu for favourites, rename, share and delete, library backups with pictures, plate designs on non-English clients, and a Portraits tour."
+    "DownloadLinkInstall": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.0/latest.zip",
+    "LastUpdate": "1790359798",
+    "Changelog": "Works with HaselTweaks: when it's loaded, import its portrait codes, copy portraits for it, and bring over the portraits saved in its Portrait Helper. Portraits are also checked against the game's own unlock conditions, the design preset list updates after a portrait goes in, and the Import window's wording is plainer."
   }
 ]
