@@ -47,7 +47,7 @@
     "Author": "Looneth",
     "Name": "RePlate",
     "InternalName": "RePlate",
-    "AssemblyVersion": "0.6.1.1",
+    "AssemblyVersion": "0.6.1.2",
     "TestingAssemblyVersion": null,
     "Punchline": "Save and restore your adventurer plate.",
     "Description": "Save your adventurer plate and your gear sets' portraits, and put them back whenever you like. Share them as codes, too.",
@@ -59,10 +59,10 @@
     "AcceptsFeedback": false,
     "IsHide": false,
     "IsTestingExclusive": false,
-    "DownloadLinkInstall": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.1/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.1/latest.zip",
-    "DownloadLinkTesting": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.1/latest.zip",
-    "LastUpdate": "1790386408",
-    "Changelog": "A RePlate button above your own adventurer plate opens RePlate from there. It can be turned off in Settings."
+    "DownloadLinkInstall": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.2/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.2/latest.zip",
+    "DownloadLinkTesting": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.2/latest.zip",
+    "LastUpdate": "1790387413",
+    "Changelog": "The RePlate button now sits on the window beside your plate with Edit Portrait and Edit Plate Design, as just its icon; hover it for its name. It can be turned off in Settings."
   }
 ]
