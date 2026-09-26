@@ -63,6 +63,6 @@
     "DownloadLinkUpdate": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.2/latest.zip",
     "DownloadLinkTesting": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.2/latest.zip",
     "LastUpdate": "1790387413",
-    "Changelog": "The RePlate button now sits on the window beside your plate with Edit Portrait and Edit Plate Design, as just its icon; hover it for its name. It can be turned off in Settings."
+    "Changelog": "The RePlate button looked ugly above the Adventure Plate so it now sits on the window beside your plate. It's just the icon now; hover it to see its name."
   }
 ]
