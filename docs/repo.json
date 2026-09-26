@@ -63,6 +63,6 @@
     "DownloadLinkUpdate": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.2/latest.zip",
     "DownloadLinkTesting": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.2/latest.zip",
     "LastUpdate": "1790387413",
-    "Changelog": "The RePlate button looked ugly above the Adventure Plate so it now sits on the window beside your plate. It's just the icon now; hover it to see its name."
+    "Changelog": "Works with HaselTweaks: when it's loaded, import its portrait codes, copy portraits for it, and bring over the portraits saved in its Portrait Helper. Portraits are also checked against the game's own unlock conditions, the design preset list updates after a portrait goes in, and the Import window's wording is plainer."
   }
 ]
