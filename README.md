@@ -2,7 +2,7 @@
 
 A custom Dalamud repository for Looneth's Final Fantasy XIV plugins. Browse plugin details and release status on the [plugin directory](https://ey4o.github.io/XIV-Plugins/).
 
-> **Current status:** RePlate 0.6.1.2 and Bagcheck 0.5.0 are available. AutoTataru is still in testing and not in the repository yet.
+> **Current status:** RePlate 0.6.1.3 and Bagcheck 0.5.0 are available. AutoTataru is still in testing and not in the repository yet.
 
 ## Add the repository to Dalamud
 
@@ -22,7 +22,7 @@ There is no need to download a ZIP manually.
 
 | Plugin | Status | Details |
 | --- | --- | --- |
-| RePlate | Release 0.6.1.2 | [Plugin page](https://ey4o.github.io/XIV-Plugins/plugins/replate/) |
+| RePlate | Release 0.6.1.3 | [Plugin page](https://ey4o.github.io/XIV-Plugins/plugins/replate/) |
 | Bagcheck | Release 0.5.0 | [Plugin page](https://ey4o.github.io/XIV-Plugins/plugins/bagcheck/) |
 | AutoTataru | Still testing, not in the repository yet | [Plugin page](https://ey4o.github.io/XIV-Plugins/plugins/autotataru/) |
 
