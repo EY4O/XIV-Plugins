@@ -1,28 +1,6 @@
 [
   {
     "Author": "Looneth",
-    "Name": "AutoTataru",
-    "InternalName": "MarketPilot",
-    "AssemblyVersion": "0.9.0.0",
-    "TestingAssemblyVersion": null,
-    "Punchline": "Market board automation—buy and sell. One-gil undercuts, handled with extreme prejudice.",
-    "Description": "Tataru sells for your retainers and shops for your crafts. Sell All prices every listing from recent sales, never below the minimum you set, and reprices anything undercut, one retainer after another or during AutoRetainer's visits. The Buy List imports Teamcraft lists, counts what you already hold, and buys across your data centre within the price ceilings and budgets you choose; cross-world buying needs Lifestream and vnavmesh. Every decision is logged, and /taru stop halts at once. Buying currently needs the English game client.",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/EY4O/AutoTataru",
-    "Tags": ["market", "marketboard", "retainer", "selling", "buying", "teamcraft"],
-    "DalamudApiLevel": 15,
-    "IconUrl": "https://ey4o.github.io/XIV-Plugins/assets/autotataru-icon.png",
-    "AcceptsFeedback": false,
-    "IsHide": false,
-    "IsTestingExclusive": false,
-    "DownloadLinkInstall": "https://github.com/EY4O/AutoTataru/releases/download/v0.9.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/EY4O/AutoTataru/releases/download/v0.9.0.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/EY4O/AutoTataru/releases/download/v0.9.0.0/latest.zip",
-    "LastUpdate": "1790241509",
-    "Changelog": "First testing release. Sells for your retainers (Sell All, AutoRetainer turns, sales loop) and buys your Buy List across your data centre, with Teamcraft import, automatic limits, stock counting, NPC price checks, a welcome guide and a switchable theme. Works on any world and data centre; buying needs the English client for now."
-  },
-  {
-    "Author": "Looneth",
     "Name": "Bagcheck",
     "InternalName": "Bagcheck",
     "AssemblyVersion": "0.5.0.0",

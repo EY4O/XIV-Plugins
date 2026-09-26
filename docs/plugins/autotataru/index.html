@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#060910">
-  <meta name="description" content="AutoTataru is a Dalamud plugin that reprices your retainers from recent sales, imports Teamcraft lists and shops across your data center within the limits you set. Testing release 0.9.0 is available from Looneth's repository.">
+  <meta name="description" content="AutoTataru is a Dalamud plugin that reprices your retainers from recent sales, imports Teamcraft lists and shops across your data center within the limits you set. It's still in testing and not in the repository yet.">
   <title>AutoTataru · XIV-Plugins</title>
   <link rel="icon" type="image/png" href="../../assets/dalamud.png">
   <link rel="stylesheet" href="../../assets/styles.css">
@@ -25,21 +25,21 @@
       <div class="detail-copy" data-reveal>
         <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Market &amp; retainers</p>
         <h1 id="plugin-name">Auto<em>Tataru.</em></h1>
-        <div class="detail-status"><span class="status">Testing release</span><span>0.9.0 available now</span></div>
+        <div class="detail-status"><span class="status">Still testing</span><span>Not in the repository yet</span></div>
         <p class="detail-tagline">Let Tataru handle the gil.</p>
         <p class="detail-summary">Undercut, reprice, restock and shop across worlds, all from your summoning bell. AutoTataru is a market board plugin that sells for your retainers and shops for your crafts, and it follows the price limits you set. It works on any world and data center.</p>
         <a class="cta" href="#features"><span>See what it does</span><span class="cta-icon" aria-hidden="true">↓</span></a>
       </div>
       <div class="detail-shell" data-reveal>
         <div class="detail-card">
-          <p class="overline">Plugin profile / 01</p>
+          <p class="overline">Plugin profile / 03</p>
           <div class="feature-icon-shell"><div class="feature-icon-core"><img src="../../assets/autotataru-icon.png" alt="AutoTataru icon" width="116" height="116"></div></div>
           <h2>AutoTataru</h2>
           <dl id="plugin-profile">
             <div><dt>Author</dt><dd>Looneth</dd></div>
             <div><dt>Platform</dt><dd>Dalamud</dd></div>
-            <div><dt>Release</dt><dd>0.9.0 · testing</dd></div>
-            <div><dt>Source</dt><dd><a href="https://github.com/EY4O/AutoTataru">GitHub</a> · AGPL-3.0</dd></div>
+            <div><dt>Release</dt><dd>Still testing</dd></div>
+            <div><dt>Licence</dt><dd>AGPL-3.0</dd></div>
           </dl>
         </div>
       </div>
@@ -128,14 +128,13 @@
       <div class="content-shell">
         <div class="content-core">
           <div>
-            <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Available now</p>
+            <p class="eyebrow"><span class="eyebrow-point" aria-hidden="true"></span> Still testing</p>
             <h2 id="release-title" class="closing-title">Tataru would never let the Scions overpay. AutoTataru won't let you either.</h2>
-            <p>The 0.9.0 testing release is out. Add Looneth's repository, then install AutoTataru from <kbd>/xlplugins</kbd>. A welcome guide opens the first time you log in and walks you through setup.</p>
-            <a class="cta" href="../../#install"><span>Repository instructions</span><span class="cta-icon" aria-hidden="true">↗</span></a>
+            <p>AutoTataru is still being tested, so it isn't in Looneth's repository yet. Once it's ready it will show up in <kbd>/xlplugins</kbd>, and a welcome guide will walk you through setup the first time you log in.</p>
           </div>
           <aside class="release-note">
-            <h3>Before you install</h3>
-            <p><strong>Testing release.</strong> 0.9.0 works on any world and data center. Buying needs the English game client for now.</p>
+            <h3>Good to know</h3>
+            <p><strong>Still testing.</strong> It works on any world and data center. Buying needs the English game client for now.</p>
             <p><strong>For other worlds:</strong> Lifestream and vnavmesh. Selling, and buying on the world you're on, need neither. AutoRetainer is optional.</p>
             <p><strong>Your account, your call.</strong> Third-party tools are against the FINAL FANTASY XIV Terms of Service, and you use AutoTataru at your own risk.</p>
           </aside>
@@ -173,7 +172,6 @@
         document.getElementById('plugin-profile').append(row);
       } catch { /* No count is better than a wrong one. */ }
     }
-    showDownloads('EY4O/AutoTataru');
     if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
       const blocks = document.querySelectorAll('[data-reveal]');
       document.documentElement.classList.add('motion');
