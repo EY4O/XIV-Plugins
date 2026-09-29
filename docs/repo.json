@@ -25,7 +25,7 @@
     "Author": "Looneth",
     "Name": "RePlate",
     "InternalName": "RePlate",
-    "AssemblyVersion": "0.6.1.4",
+    "AssemblyVersion": "0.6.1.5",
     "TestingAssemblyVersion": null,
     "Punchline": "Save and restore your adventurer plate.",
     "Description": "Save your adventurer plate and your gear sets' portraits, and put them back whenever you like. Share them as codes, too.",
@@ -37,10 +37,10 @@
     "AcceptsFeedback": false,
     "IsHide": false,
     "IsTestingExclusive": false,
-    "DownloadLinkInstall": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.4/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.4/latest.zip",
-    "DownloadLinkTesting": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.4/latest.zip",
-    "LastUpdate": "1790571313",
+    "DownloadLinkInstall": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.5/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.5/latest.zip",
+    "DownloadLinkTesting": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.5/latest.zip",
+    "LastUpdate": "1790662539",
     "Changelog": "Undo last restore puts back the plate you had before a restore, and pressing it again redoes. Settings also has a new Dark window style that makes RePlate look like the game's own windows, in the game's fonts."
   }
 ]
