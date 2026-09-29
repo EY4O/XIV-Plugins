@@ -41,6 +41,6 @@
     "DownloadLinkUpdate": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.5/latest.zip",
     "DownloadLinkTesting": "https://github.com/EY4O/RePlate/releases/download/v0.6.1.5/latest.zip",
     "LastUpdate": "1790662539",
-    "Changelog": "Undo last restore puts back the plate you had before a restore, and pressing it again redoes. Settings also has a new Dark window style that makes RePlate look like the game's own windows, in the game's fonts."
+    "Changelog": "Undo, next to Restore, puts back the plate you had before a restore, and pressing it again redoes. Settings also has a new Dark window style that makes RePlate look like the game's own windows, in the game's fonts."
   }
 ]
