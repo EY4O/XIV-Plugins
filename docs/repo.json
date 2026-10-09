@@ -3,7 +3,7 @@
     "Author": "Looneth",
     "Name": "Bagcheck",
     "InternalName": "Bagcheck",
-    "AssemblyVersion": "0.5.0.0",
+    "AssemblyVersion": "0.5.1.0",
     "TestingAssemblyVersion": null,
     "Punchline": "A shopping list and retainer tracker for crafters.",
     "Description": "Know what you need, what you have, and where it's cheapest. Bagcheck keeps count; you do the shopping.",
@@ -15,11 +15,11 @@
     "AcceptsFeedback": false,
     "IsHide": false,
     "IsTestingExclusive": false,
-    "DownloadLinkInstall": "https://github.com/EY4O/Bagcheck/releases/download/v0.5.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/EY4O/Bagcheck/releases/download/v0.5.0.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/EY4O/Bagcheck/releases/download/v0.5.0.0/latest.zip",
-    "LastUpdate": "1790245975",
-    "Changelog": "First release: a shopping list with Teamcraft import, holdings across bags, crystals, saddlebag and retainers, data-centre prices with NPC vendors and a total, and a Retainers tab."
+    "DownloadLinkInstall": "https://github.com/EY4O/Bagcheck/releases/download/v0.5.1.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/EY4O/Bagcheck/releases/download/v0.5.1.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/EY4O/Bagcheck/releases/download/v0.5.1.0/latest.zip",
+    "LastUpdate": "1791579533",
+    "Changelog": "The logo in the About tab and welcome guide is now square, and the README has screenshots."
   },
   {
     "Author": "Looneth",
